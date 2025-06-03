@@ -1,0 +1,18 @@
+openapi: 3.0.3
+info:
+  title: Ping Pong API
+  version: 1.0.0
+paths:
+  /ping:
+    get:
+      summary: Returns pong
+      operationId: getPing
+      responses:
+        '200':
+          description: Pong response
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: pong
+

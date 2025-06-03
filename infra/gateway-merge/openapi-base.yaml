@@ -1,0 +1,12 @@
+openapi: 3.0.3
+info:
+  title: Base API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Returns a 200 for healthy
+      operationId: getHealth
+      responses:
+        '200':
+          description: A healthy endpoint response
