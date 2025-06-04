@@ -1,12 +1,30 @@
-openapi: 3.0.3
+openapi: "3.0.2"
 info:
-  title: Base API
   version: 1.0.0
+  title: Test API for CDK
 paths:
-  /health:
+  /pets:
     get:
-      summary: Returns a 200 for healthy
-      operationId: getHealth
+      summary: Test Method
+      operationId: testMethod
       responses:
-        '200':
-          description: A healthy endpoint response
+        "200":
+          description: A paged array of pets
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
+      x-amazon-apigateway-integration:
+        responses:
+          default:
+            statusCode: "200"
+        requestTemplates:
+          application/json: "{\"statusCode\": 200}"
+        passthroughBehavior: when_no_match
+        type: mock
+
+components:
+  schemas:
+    Empty:
+      title: Empty Schema
+      type: object

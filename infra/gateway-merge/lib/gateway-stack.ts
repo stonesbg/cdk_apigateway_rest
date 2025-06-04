@@ -12,6 +12,17 @@ export class ApiGatewayStack extends cdk.Stack {
       apiDefinition: apigw.ApiDefinition.fromAsset('openapi-base.yaml'), // minimal OpenAPI spec
       restApiName: 'MergedApiGateway',
       mode: apigw.RestApiMode.MERGE,
+      endpointTypes: [apigw.EndpointType.REGIONAL],
+    });
+
+
+    const apiGatewayDeployment = new apigw.Deployment(this, 'ApiGatewayDeployment', {
+      api: this.api
+    });
+
+    const stage = new apigw.Stage(this, 'ExampleV1', {
+      stageName: 'v1',
+      deployment: apiGatewayDeployment,
     });
   }
 }

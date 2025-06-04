@@ -3,7 +3,8 @@
   "packages": [
     "pnpm_8@latest",
     "nodejs@latest",
-    "localstack@latest"
+    "localstack@latest",
+    "awscli2@latest"
   ],
   "shell": {
     "init_hook": [

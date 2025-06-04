@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   aws-cdk-lib:
-    specifier: 2.198.0
-    version: 2.198.0(constructs@10.4.2)
+    specifier: 2.200.0
+    version: 2.200.0(constructs@10.4.2)
   constructs:
     specifier: ^10.4.2
     version: 10.4.2
@@ -20,8 +20,8 @@ devDependencies:
     specifier: 22.7.9
     version: 22.7.9
   aws-cdk:
-    specifier: 2.1004.0
-    version: 2.1004.0
+    specifier: 2.1017.0
+    version: 2.1017.0
   aws-cdk-local:
     specifier: ^3.0.1
     version: 3.0.1
@@ -56,8 +56,8 @@ packages:
     resolution: {integrity: sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==}
     dev: false
 
-  /@aws-cdk/cloud-assembly-schema@41.2.0:
-    resolution: {integrity: sha512-JaulVS6z9y5+u4jNmoWbHZRs9uGOnmn/ktXygNWKNu1k6lF3ad4so3s18eRu15XCbUIomxN9WPYT6Ehh7hzONw==}
+  /@aws-cdk/cloud-assembly-schema@44.1.0:
+    resolution: {integrity: sha512-WvesvSbBw5FrVbH8LZfjX5iDDRdixDkEnbsFGN8H2GNR9geBo4kIBI1nlOiqoGB6dwPwif8qDEM/4NOfuzIChQ==}
     engines: {node: '>= 14.15.0'}
     dev: false
     bundledDependencies:
@@ -821,15 +821,15 @@ packages:
     resolution: {integrity: sha512-htCUDlxyyCLMgaM3xXg0C0LW2xqfuQ6p05pCEIsXuyQ+a1koYKTuBMzRNwmybfLgvJDMd0r1LTn4+E0Ti6C2AA==}
     dev: true
 
-  /aws-cdk-lib@2.198.0(constructs@10.4.2):
-    resolution: {integrity: sha512-CyZ+lnRsCsLskzQLPO0EiGl5EVcLluhfa67df3b8/gJfsm+91SHJa75OH+ymdGtUp5Vn/MWUPsujw0EhWMfsIQ==}
+  /aws-cdk-lib@2.200.0(constructs@10.4.2):
+    resolution: {integrity: sha512-t4wGmFYuzlos7fFLFmv6ljtpMu+qYmPQnodfgUQ/BE0+y8S2MONQf9ihN+mZvsRqj96t6BwuVy3lR3UymtwGbw==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.237
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
-      '@aws-cdk/cloud-assembly-schema': 41.2.0
+      '@aws-cdk/cloud-assembly-schema': 44.1.0
       constructs: 10.4.2
     dev: false
     bundledDependencies:
@@ -852,8 +852,8 @@ packages:
       diff: 5.2.0
     dev: true
 
-  /aws-cdk@2.1004.0:
-    resolution: {integrity: sha512-3E5ICmSc7ZCZCwLX7NY+HFmmdUYgRaL+67h/BDoDQmkhx9StC8wG4xgzHFY9k8WQS0+ib/MP28f2d9yzHtQLlQ==}
+  /aws-cdk@2.1017.0:
+    resolution: {integrity: sha512-KnpU9kOCR1k2tAcpYoqtIdq7UqKVX4ooNrGJq+dXUKRnIwQr66tSe5YEoeQGYxImAHv1LuZAyAAm5DcEPhbjNg==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
     optionalDependencies:
