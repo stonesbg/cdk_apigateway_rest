@@ -6,13 +6,16 @@
 # https://github.com/actions/labeler
 
 name: Labeler
-on: [workflow_dispatch]
+on: 
+  workflow_dispatch:
+    inputs:
+      dispatch_id:
+        description: 'Unique identifier for this dispatch'
+        required: false
 
 jobs:
-  label:
-
+  identify:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Test
-      run: echo "hello world"
+      - name: ${{ github.event.inputs.dispatch_id }}
+        run: echo "Dispatch ID is ${{ github.event.inputs.dispatch_id }}"
